@@ -1,0 +1,556 @@
+{
+  "title": "Where Are You on the AI Developer Journey?",
+  "meta": {
+    "description": "Discover your stage in AI adoption as a developer through an interactive assessment"
+  },
+  "loading": "Loading your AI journey...",
+  "loadingSubtext": "Analyzing AI development stages",
+  "hero": {
+    "title": "Where Are You on the AI Developer Journey?",
+    "subtitle": "Discover your stage in AI adoption through an interactive assessment inspired by interview with 22 AI-powered developers",
+    "startButton": "Start Your Journey"
+  },
+  "assessment": {
+    "title": "Assessment",
+    "previous": "Previous",
+    "next": "Next",
+    "finish": "Get Results",
+    "questions": [
+      {
+        "id": 1,
+        "question": "How do you typically use AI tools in your development work?",
+        "options": [
+          {
+            "text": "I rarely use them, or only for very basic tasks",
+            "score": {
+              "stage1": 3,
+              "stage2": 1,
+              "stage3": 0,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Mainly for code completion and simple debugging",
+            "score": {
+              "stage1": 2,
+              "stage2": 3,
+              "stage3": 1,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "For multi-step tasks and iterative problem solving",
+            "score": {
+              "stage1": 0,
+              "stage2": 1,
+              "stage3": 3,
+              "stage4": 2
+            }
+          },
+          {
+            "text": "As strategic partners for complex feature development",
+            "score": {
+              "stage1": 0,
+              "stage2": 0,
+              "stage3": 1,
+              "stage4": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "What's your tolerance for AI-generated errors?",
+        "options": [
+          {
+            "text": "Very low - I expect it to work perfectly the first time",
+            "score": {
+              "stage1": 3,
+              "stage2": 1,
+              "stage3": 0,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "I'm learning to iterate but get frustrated with multiple attempts",
+            "score": {
+              "stage1": 1,
+              "stage2": 3,
+              "stage3": 1,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "I embrace iterative prompting and refinement",
+            "score": {
+              "stage1": 0,
+              "stage2": 1,
+              "stage3": 3,
+              "stage4": 2
+            }
+          },
+          {
+            "text": "I strategically use errors as learning opportunities for better delegation",
+            "score": {
+              "stage1": 0,
+              "stage2": 0,
+              "stage3": 1,
+              "stage4": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "How do you approach prompting AI tools?",
+        "options": [
+          {
+            "text": "Simple, one-line requests",
+            "score": {
+              "stage1": 3,
+              "stage2": 2,
+              "stage3": 0,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "I copy-paste from browser-based LLMs when needed",
+            "score": {
+              "stage1": 1,
+              "stage2": 3,
+              "stage3": 1,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "I prompt for plans first and build context engineering intuition",
+            "score": {
+              "stage1": 0,
+              "stage2": 1,
+              "stage3": 3,
+              "stage4": 2
+            }
+          },
+          {
+            "text": "I create elaborate, multi-agent workflows with detailed instructions",
+            "score": {
+              "stage1": 0,
+              "stage2": 0,
+              "stage3": 1,
+              "stage4": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What types of tasks do you delegate to AI?",
+        "options": [
+          {
+            "text": "Only very basic code snippets and simple questions",
+            "score": {
+              "stage1": 3,
+              "stage2": 1,
+              "stage3": 0,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Debugging issues and generating boilerplate code",
+            "score": {
+              "stage1": 1,
+              "stage2": 3,
+              "stage3": 1,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Multi-file changes and moderately complex features",
+            "score": {
+              "stage1": 0,
+              "stage2": 1,
+              "stage3": 3,
+              "stage4": 2
+            }
+          },
+          {
+            "text": "Large-scale refactoring and complete feature development",
+            "score": {
+              "stage1": 0,
+              "stage2": 0,
+              "stage3": 1,
+              "stage4": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "How do you verify AI-generated code?",
+        "options": [
+          {
+            "text": "I expect it to work without much verification",
+            "score": {
+              "stage1": 3,
+              "stage2": 1,
+              "stage3": 0,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Basic testing and reviewing for obvious errors",
+            "score": {
+              "stage1": 1,
+              "stage2": 3,
+              "stage3": 1,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Thorough review and testing with understanding of AI limitations",
+            "score": {
+              "stage1": 0,
+              "stage2": 1,
+              "stage3": 3,
+              "stage4": 2
+            }
+          },
+          {
+            "text": "Systematic validation with extensive testing and architectural review",
+            "score": {
+              "stage1": 0,
+              "stage2": 0,
+              "stage3": 1,
+              "stage4": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "What's your experience with different AI models and tools?",
+        "options": [
+          {
+            "text": "I stick to one basic tool and rarely explore alternatives",
+            "score": {
+              "stage1": 3,
+              "stage2": 1,
+              "stage3": 0,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "I experiment with different tools but inconsistently",
+            "score": {
+              "stage1": 1,
+              "stage2": 3,
+              "stage3": 1,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "I strategically switch between tools and understand their strengths",
+            "score": {
+              "stage1": 0,
+              "stage2": 1,
+              "stage3": 3,
+              "stage4": 2
+            }
+          },
+          {
+            "text": "I orchestrate multiple models and tools for optimal outcomes",
+            "score": {
+              "stage1": 0,
+              "stage2": 0,
+              "stage3": 1,
+              "stage4": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "How do you share AI insights with your team?",
+        "options": [
+          {
+            "text": "I rarely discuss AI tools with colleagues",
+            "score": {
+              "stage1": 3,
+              "stage2": 1,
+              "stage3": 0,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Occasional mentions when something works well",
+            "score": {
+              "stage1": 1,
+              "stage2": 3,
+              "stage3": 1,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Active participation in discussions and demos of effective prompts",
+            "score": {
+              "stage1": 0,
+              "stage2": 1,
+              "stage3": 3,
+              "stage4": 2
+            }
+          },
+          {
+            "text": "Leading workshops and establishing team best practices",
+            "score": {
+              "stage1": 0,
+              "stage2": 0,
+              "stage3": 1,
+              "stage4": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "What's your view on AI writing 90% of code in the future?",
+        "options": [
+          {
+            "text": "Skeptical - I don't see how that could work effectively",
+            "score": {
+              "stage1": 3,
+              "stage2": 1,
+              "stage3": 0,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Curious but concerned about quality and reliability",
+            "score": {
+              "stage1": 1,
+              "stage2": 3,
+              "stage3": 1,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Optimistic - I can see how delegation and verification could work",
+            "score": {
+              "stage1": 0,
+              "stage2": 1,
+              "stage3": 3,
+              "stage4": 2
+            }
+          },
+          {
+            "text": "Confident - I'm already moving towards that model successfully",
+            "score": {
+              "stage1": 0,
+              "stage2": 0,
+              "stage3": 1,
+              "stage4": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "How has AI changed your role as a developer?",
+        "options": [
+          {
+            "text": "It hasn't significantly changed what I do",
+            "score": {
+              "stage1": 3,
+              "stage2": 1,
+              "stage3": 0,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "I'm faster at certain tasks but my role is mostly the same",
+            "score": {
+              "stage1": 1,
+              "stage2": 3,
+              "stage3": 1,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "I'm becoming more of a collaborator and context engineer",
+            "score": {
+              "stage1": 0,
+              "stage2": 1,
+              "stage3": 3,
+              "stage4": 2
+            }
+          },
+          {
+            "text": "I've shifted to delegation, verification, and architectural thinking",
+            "score": {
+              "stage1": 0,
+              "stage2": 0,
+              "stage3": 1,
+              "stage4": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "What motivates your AI tool usage?",
+        "options": [
+          {
+            "text": "Curiosity, but I'm not convinced of the long-term value",
+            "score": {
+              "stage1": 3,
+              "stage2": 1,
+              "stage3": 0,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Time savings and efficiency improvements",
+            "score": {
+              "stage1": 1,
+              "stage2": 3,
+              "stage3": 1,
+              "stage4": 0
+            }
+          },
+          {
+            "text": "Expanding what I can accomplish and build",
+            "score": {
+              "stage1": 0,
+              "stage2": 1,
+              "stage3": 3,
+              "stage4": 2
+            }
+          },
+          {
+            "text": "Preparing for fundamental changes in software development",
+            "score": {
+              "stage1": 0,
+              "stage2": 0,
+              "stage3": 1,
+              "stage4": 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "results": {
+    "title": "Your AI Journey Stage",
+    "currentSkills": "Your Current Skills",
+    "nextSteps": "Next Steps",
+    "recommendations": "Tool Recommendations",
+    "retake": "Retake Assessment",
+    "share": "Share Results"
+  },
+  "share": {
+    "text": "I'm at Stage {stage}: {title} on my AI Developer Journey!\n\nDiscover your AI development stage at:",
+    "successTitle": "Copied!",
+    "successText": "Results copied to clipboard",
+    "errorTitle": "Share Failed",
+    "errorText": "Please try again"
+  },
+  "stageLabels": {
+    "stage1": "AI Skeptic",
+    "stage2": "AI Explorer",
+    "stage3": "AI Collaborator",
+    "stage4": "AI Strategist"
+  },
+  "stages": {
+    "stage1": {
+      "title": "AI Skeptic",
+      "summary": "Dabbling with AI in small tasks and questions. Developers are primarily working with code completions and have low tolerance for iteration and errors.",
+      "description": "You're in the early exploration phase, dabbling with AI in small tasks and questions. You primarily work with code completions and have low tolerance for iteration and errors.",
+      "characteristics": [
+        "Using AI for simple code completion",
+        "Low tolerance for AI errors",
+        "Expecting one-shot success",
+        "Limited experimentation with different tools"
+      ],
+      "nextSteps": [
+        "Target Specific, Annoying Tasks: Use AI for tasks you hate, like writing a README.md, generating a basic Dockerfile, or converting JSON to a TypeScript interface.",
+        "Practice 'Iterative Correction': When an answer is wrong, make one small, specific correction, like '...can you do it using a pure function?' or '...try again using the requests library.'",
+        "Use It as a Smart Rubber Duck: Paste your broken code and error message, then ask, 'What is the most likely cause of this error? Explain it step-by-step.'"
+      ],
+      "tools": [
+        "GitHub Copilot (in your IDE): Focus on accepting or cycling through its single-line and block-level completions.",
+        "ChatGPT / Claude (Free versions): Use the web interface for isolated questions that don't require your project's context.",
+        "Phind.com: Use for questions where you want to verify the answer with cited sources."
+      ]
+    },
+    "stage2": {
+      "title": "AI Explorer",
+      "summary": "Using AI for debugging, boilerplate and snippets. With practice, they embrace iterative prompting and realize when to start over instead of pushing forward.",
+      "description": "You're using AI for debugging, boilerplate and snippets, starting to understand AI's limitations. You work with completions and chat, copy-paste from browser-based LLMs.",
+      "characteristics": [
+        "Using AI for debugging and boilerplate",
+        "Copy-pasting from browser LLMs",
+        "Learning to iterate but still get frustrated",
+        "Understanding some AI limitations"
+      ],
+      "nextSteps": [
+        "Master the 'Context Sandwich': Structure prompts with: 1. Persona, 2. Context (paste your code), 3. Task, and 4. Constraints ('Do not use external libraries').",
+        "Plan Before You Code: For any non-trivial task, first ask the AI to create a plan, e.g., 'Outline the high-level steps to add Google OAuth login.'",
+        "Use AI-Native IDE Features: Highlight code and use the 'inline chat' or 'edit with AI' feature to refactor it or add comments directly within your editor."
+      ],
+      "tools": [
+        "AI-Integrated IDE (Cursor, VS Code w/ Copilot Chat): This is the key tool for this stage, keeping the AI conversation next to your code.",
+        "ChatGPT Plus / Claude Pro: The paid tiers provide faster responses, better models, and the ability to upload files for context.",
+        "Perplexity.ai: Excellent for research-oriented questions where you need to trace the source of the AI's claims."
+      ]
+    },
+    "stage3": {
+      "title": "AI Collaborator",
+      "summary": "Actively co-creating with AI, using AI-enabled IDEs for multi-step tasks and adopting habits like prompting for a plan first and strategically switching between tools.",
+      "description": "You're actively co-creating with AI and building context engineering intuition. You use AI-enabled IDEs for multi-step tasks and have adopted effective prompting strategies.",
+      "characteristics": [
+        "Using AI for multi-step tasks and multi-file changes",
+        "Prompting for plans before implementation",
+        "Switching strategically between tools and models",
+        "Sharing effective prompts with team members"
+      ],
+      "nextSteps": [
+        "Chain Your Prompts: Treat a feature as a sequence of prompts (e.g., 1. Propose a plan, 2. Implement the component, 3. Write the tests).",
+        "Build a Personal Prompt Library: Create a `my_prompts.md` file to save your most effective prompts, categorized by task (Refactoring, Debugging, etc.).",
+        "Delegate Full-File Creation: Trust the AI to generate an entire file from a detailed prompt specifying its name, class, methods, and logic."
+      ],
+      "tools": [
+        "Your own `prompts.md` file: Your most important tool, a personal, battle-tested playbook.",
+        "A Second LLM: Use a different model (e.g., Claude if you main OpenAI) when you get stuck to get a different perspective.",
+        "Team Slack/Discord Channel: Create a dedicated channel (e.g., `#ai-prompts`) to share successful workflows with your team."
+      ]
+    },
+    "stage4": {
+      "title": "AI Strategist",
+      "summary": "Treating AI as a powerful partner for complex tasks, building elaborate multi-agent workflows with increasing autonomy and parallelism.",
+      "description": "You treat AI as a powerful partner for feature development, complex tasks, and large-scale refactoring. You've built elaborate, multi-agent workflows with high autonomy.",
+      "characteristics": [
+        "Elaborate multi-agent workflows",
+        "Strategic delegation and verification focus",
+        "High confidence in AI partnership",
+        "Leading team adoption and best practices"
+      ],
+      "nextSteps": [
+        "Automate Verification: Mandate that significant AI-generated code must be accompanied by AI-generated tests. Review the tests first.",
+        "Systematize Mentoring: Host a monthly 30-minute 'AI Workflow' session to live-demo how you solved a recent problem and share your prompt library.",
+        "Build Small, Custom Agents: Write simple scripts (Python/Node.js) using an LLM's API to automate specific, repetitive company tasks."
+      ],
+      "tools": [
+        "Simple API Scripts (Python/Node.js): Use libraries like `openai` or `anthropic` to create repeatable, version-controlled AI workflows.",
+        "Orchestration Frameworks (e.g., LangChain, LlamaIndex): Begin experimenting with these to chain multiple LLM calls and connect to other data sources.",
+        "Internal Documentation (Confluence/Notion): Create a living document of 'AI Best Practices' for your team."
+      ]
+    }
+  },
+  "about": {
+    "title": "About This Assessment",
+    "description": "This interactive assessment is inspired by Thomas Dohmke's interview with 22 developers who heavily use AI tools. The four stages represent a natural progression from skepticism to strategic AI partnership, reimagined as an engaging self-assessment tool.",
+    "readMore": "Read the original article"
+  },
+  "footer": {
+    "githubLink": "View source code on GitHub"
+  }
+}

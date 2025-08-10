@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Where Are You on the AI Developer Journey?</title>
+    <meta name="description" data-i18n="meta.description" content="Discover your stage in AI adoption as a developer through an interactive assessment">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" data-i18n="title" content="Where Are You on the AI Developer Journey?">
+    <meta property="og:description" data-i18n="meta.description" content="Discover your stage in AI adoption as a developer through an interactive assessment">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    
+    <meta name="theme-color" content="#3B82F6">
+    
+    <!-- Preload Critical Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CDN Libraries -->
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Chart.js for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    
+    <!-- i18next for internationalization -->
+    <script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.4.2/i18nextHttpBackend.min.js"></script>
+    
+    <!-- SweetAlert2 for beautiful modals -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.1/dist/sweetalert2.all.min.js"></script>
+    
+    <!-- Tippy.js for tooltips -->
+    <script src="https://unpkg.com/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6.3.7/dist/tippy-bundle.umd.js"></script>
+    
+    <!-- Particles.js for background effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- AOS for scroll animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button id="lang-en" class="lang-btn active" data-lang="en">EN</button>
+        <button id="lang-zh" class="lang-btn" data-lang="zh-TW">繁中</button>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 8L32 14V26L20 32L8 26V14L20 8Z" stroke="white" stroke-width="2" fill="none"/>
+                        <circle cx="20" cy="20" r="4" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="loading-text">
+                <p data-i18n="loading">Loading your AI journey...</p>
+                <div class="loading-subtext" data-i18n="loadingSubtext">Analyzing AI development stages</div>
+            </div>
+        </div>
+        <div class="loading-background">
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+            <div class="bg-circle bg-circle-3"></div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div id="main-container" class="main-container" style="display: none;">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div id="particles-hero"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-i18n="hero.title" class="hero-title">Where Are You on the AI Developer Journey?</h1>
+                    <p data-i18n="hero.subtitle" class="hero-subtitle">
+                        Discover your stage in AI adoption through an interactive assessment based on research with 22 AI-powered developers
+                    </p>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="stage-preview" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stage-bubble stage-1" data-i18n-tooltip="stageLabels.stage1" data-tippy-content="AI Skeptic"></div>
+                    <div class="stage-bubble stage-2" data-i18n-tooltip="stageLabels.stage2" data-tippy-content="AI Explorer"></div>
+                    <div class="stage-bubble stage-3" data-i18n-tooltip="stageLabels.stage3" data-tippy-content="AI Collaborator"></div>
+                    <div class="stage-bubble stage-4" data-i18n-tooltip="stageLabels.stage4" data-tippy-content="AI Strategist"></div>
+                </div>
+                <button id="start-assessment" class="cta-button" data-i18n="hero.startButton">
+                    Start Your Journey
+                </button>
+            </div>
+        </section>
+
+        <!-- Assessment Section -->
+        <section id="assessment" class="assessment" style="display: none;">
+            <div class="assessment-container">
+                <div class="assessment-header">
+                    <h2 data-i18n="assessment.title">Assessment</h2>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                        <span class="progress-text" id="progress-text">0/10</span>
+                    </div>
+                </div>
+                
+                <div id="question-container" class="question-container">
+                    <!-- Questions will be dynamically loaded here -->
+                </div>
+                
+                <div class="assessment-navigation">
+                    <button id="prev-question" class="nav-button" data-i18n="assessment.previous" disabled>Previous</button>
+                    <button id="next-question" class="nav-button" data-i18n="assessment.next">Next</button>
+                    <button id="finish-assessment" class="nav-button primary" data-i18n="assessment.finish" style="display: none;">Get Results</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="results" style="display: none;">
+            <div id="particles-results"></div>
+            <div class="results-container">
+                <div class="results-header">
+                    <h2 data-i18n="results.title">Your AI Journey Stage</h2>
+                    <div id="stage-indicator" class="stage-indicator">
+                        <!-- Stage will be dynamically set -->
+                    </div>
+                </div>
+                
+                <div class="results-content">
+                    <div class="stage-description">
+                        <h3 id="stage-title"><!-- Dynamic stage title --></h3>
+                        <p id="stage-description"><!-- Dynamic stage description --></p>
+                    </div>
+                    
+                    
+                    <div class="insights">
+                        <div class="insight-card" data-aos="fade-up">
+                            <h4 data-i18n="results.currentSkills">Your Current Skills</h4>
+                            <canvas id="skills-chart"></canvas>
+                        </div>
+                        
+                        <div class="insight-card" data-aos="fade-up" data-aos-delay="200">
+                            <h4 data-i18n="results.nextSteps">Next Steps</h4>
+                            <ul id="next-steps-list">
+                                <!-- Dynamic next steps -->
+                            </ul>
+                        </div>
+                        
+                        <div class="insight-card" data-aos="fade-up" data-aos-delay="400">
+                            <h4 data-i18n="results.recommendations">Tool Recommendations</h4>
+                            <ul id="tool-recommendations-list">
+                                <!-- Dynamic tool recommendations -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-actions">
+                    <button id="retake-assessment" class="action-button" data-i18n="results.retake">
+                        Retake Assessment
+                    </button>
+                    <button id="share-results" class="action-button primary" data-i18n="results.share">
+                        Share Results
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about-container">
+                <h2 data-i18n="about.title" data-aos="fade-up">About This Assessment</h2>
+                <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                    <p data-i18n="about.description">
+                        This assessment is based on interviews conducted with 22 developers who heavily use AI tools in their workflow. 
+                        The four stages represent a natural progression from skepticism to strategic AI partnership.
+                    </p>
+                    <div class="article-link">
+                        <a href="https://web.archive.org/web/20250809141510/https://ashtom.github.io/developers-reinvented" target="_blank" rel="noopener noreferrer" class="article-btn">
+                            <span data-i18n="about.readMore">Read the full article</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="stages-overview">
+                        <div class="stage-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stage-number">1</div>
+                            <h4 data-i18n="stages.stage1.title">AI Skeptic</h4>
+                            <p data-i18n="stages.stage1.summary">Dabbling with AI in small tasks and questions. Developers are primarily working with code completions and have low tolerance for iteration and errors.</p>
+                        </div>
+                        
+                        <div class="stage-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stage-number">2</div>
+                            <h4 data-i18n="stages.stage2.title">AI Explorer</h4>
+                            <p data-i18n="stages.stage2.summary">Using AI for debugging, boilerplate and snippets. With practice, they embrace iterative prompting and realize when to start over instead of pushing forward.</p>
+                        </div>
+                        
+                        <div class="stage-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stage-number">3</div>
+                            <h4 data-i18n="stages.stage3.title">AI Collaborator</h4>
+                            <p data-i18n="stages.stage3.summary">Actively co-creating with AI, using AI-enabled IDEs for multi-step tasks and adopting habits like prompting for a plan first and strategically switching between tools.</p>
+                        </div>
+                        
+                        <div class="stage-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stage-number">4</div>
+                            <h4 data-i18n="stages.stage4.title">AI Strategist</h4>
+                            <p data-i18n="stages.stage4.summary">Treating AI as a powerful partner for complex tasks, building elaborate multi-agent workflows with increasing autonomy and parallelism.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>
+                    <span data-i18n="footer.githubLink">View source code on GitHub</span>
+                    <a href="https://github.com/CJHwong" target="_blank" rel="noopener noreferrer">
+                        github.com/CJHwong
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom Scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>
