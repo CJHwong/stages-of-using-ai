@@ -1139,7 +1139,7 @@ p {
     .hero-content {
         display: block;
         text-align: center;
-        padding: 1rem var(--container-padding);
+        padding: 3rem var(--container-padding) 1rem;
         order: 1;
     }
     
@@ -1227,7 +1227,7 @@ p {
     
     .hero-content {
         gap: 1.5rem;
-        padding: 0.5rem var(--container-padding);
+        padding: 3rem var(--container-padding) 0.5rem;
         justify-content: center;
     }
     
